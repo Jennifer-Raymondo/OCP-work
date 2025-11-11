@@ -61,5 +61,29 @@ const shapes = [
 console.log("Old total area:", totalArea(shapes).toFixed(2));
 
 
+// Step 5: Add a new shape — without touching any old code
 
+// Now we add a Triangle class, but notice we don’t touch totalArea() or any of the old classes.
+
+class Triangle extends Shape {
+  constructor(base, height) {
+    super();
+    this.base = base;
+    this.height = height;
+  }
+
+  area() {
+    return 0.5 * this.base * this.height;
+  }
+}
+
+
+// Step 6: Demonstrate both old and new behavior
+const moreShapes = [
+  new Circle(5),
+  new Rectangle(4, 6),
+  new Triangle(4, 3),
+];
+
+console.log("New total area (with triangle):", totalArea(moreShapes).toFixed(2));
 
