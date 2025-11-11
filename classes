@@ -1,0 +1,30 @@
+# python
+
+class Dog:
+    def __init__(self, name, age):
+        self.name = name    # attribute
+        self.age = age
+
+    def speak(self):       # method
+        return f"{self.name} says woof!"
+
+# Using the class
+d = Dog("Rex", 3)
+print(d.speak())  # -> Rex says woof!
+
+
+# javascript
+class Dog {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  speak() {
+    return `${this.name} says woof!`;
+  }
+}
+
+// Using the class
+const d = new Dog("Rex", 3);
+console.log(d.speak()); // -> Rex says woof!

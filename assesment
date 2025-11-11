@@ -1,0 +1,21 @@
+The slide task: Demonstrate OCP in action (code demo)
+
+Goal: show how to extend functionality safely without modifying existing logic (Open/Closed Principle: open for extension, closed for modification).
+
+I’ll use the shape area scenario — compute area for many shapes. First show a bad version (violates OCP) then refactor to an OCP-compliant design. Finally, add a new shape showing we didn’t change the existing code.
+
+
+What the Open/Closed Principle (OCP) means
+
+OCP = Open for extension, closed for modification.
+
+It means you should be able to add new features (extend behavior) without changing existing code that already works.
+We achieve this using classes, inheritance, and polymorphism.
+
+
+
+
+
+
+
+
